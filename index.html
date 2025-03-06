@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite Jantar Romântico</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-8">
+                <div class="card shadow convite-card">
+                    <div class="card-body text-center">
+                        <h1 class="mb-4">Convite Jantar</h1>
+                        <div class="mensagem-convite mb-4">
+                            <p class="lead">Oi princesa,</p>
+                            <p>Gostaria de te convidar para um jantar especial, comemorando 1 ano e meio ao seu lado</p> 
+                            <p>e o dia das mulheres.</p>
+                            <p>Aceitas comida boa, vinho e papo furado, junto da minha companhia?</p>
+                        </div>
+                        <div class="botoes-container">
+                            <button class="btn btn-success btn-sim" onclick="aceitarConvite()">Sim, eu quero!</button>
+                            <button class="btn btn-danger btn-nao" onmouseover="fugirDoCursor(this)">Não, obrigada</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalAceitacao" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Que ótimo! ❤️</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Que bom princesa!</p>
+                    <p>Te busco às 19h, ok?</p>
+                    <p>Prepare-se para uma noite especial! 💕</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Beijos! 💋</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
