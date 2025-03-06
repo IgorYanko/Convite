@@ -10,11 +10,10 @@ function fugirDoCursor(btn) {
     btn.style.top = randomY + 'px';
     
     const mensagens = [
-        "Tente novamente! 😜",
-        "Você não vai conseguir! 😏",
-        "Quase lá! 😅",
-        "Mais uma vez! 😋",
-        "Impossível! 😎"
+        "😜",
+        "Hoje não!",
+        "Vai sim! 😅",
+        "Olé!",
     ];
     
     const mensagemAleatoria = mensagens[Math.floor(Math.random() * mensagens.length)];
