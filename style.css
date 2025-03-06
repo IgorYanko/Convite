@@ -1,0 +1,112 @@
+body {
+    background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.convite-card {
+    background: rgba(255, 255, 255, 0.95);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+}
+
+.convite-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-body {
+    padding: 3rem;
+}
+
+h1 {
+    color: #ff4757;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.mensagem-convite {
+    color: #2f3542;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.mensagem-convite p {
+    margin-bottom: 1rem;
+}
+
+.botoes-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-sim {
+    background-color: #2ecc71;
+    border: none;
+    color: white;
+}
+
+.btn-sim:hover {
+    background-color: #27ae60;
+    transform: scale(1.05);
+}
+
+.btn-nao {
+    background-color: #ff4757;
+    border: none;
+    color: white;
+}
+
+.btn-nao:hover {
+    background-color: #ff6b81;
+}
+
+.modal-content {
+    border-radius: 20px;
+    border: none;
+}
+
+.modal-header {
+    background-color: #ff6b6b;
+    color: white;
+    border-radius: 20px 20px 0 0;
+    border: none;
+}
+
+.modal-body {
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.modal-footer {
+    border-top: none;
+    justify-content: center;
+}
+
+@keyframes coracao {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.animacao-coracao {
+    animation: coracao 1s infinite;
+}
