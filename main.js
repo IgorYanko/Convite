@@ -26,7 +26,7 @@ function aceitarConvite() {
     
     document.querySelector('.btn-sim').classList.add('animacao-coracao');
     
-    const audio = new Audio('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3');
+    const audio = new Audio('sound.mp3');
     audio.play();
 }
 
